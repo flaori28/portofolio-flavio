@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPERATOR | PROFILE</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <div id="background-canvas-container"></div>
+  <div class="scanlines"></div>
+  <div class="noise-overlay"></div>
+  
+  <header class="main-header">
+    <div class="logo">
+      <span class="highlight">GHOST</span> // PROTOCOL
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_terminal">TERMINAL</a></li>
+      <li><a href="tcs.html" data-i18n="nav_mission">TCS</a></li>
+      <li><a href="competences.html" data-i18n="nav_arsenal">COMPÉTENCES</a></li>
+      <li><a href="projets.html" data-i18n="nav_ops">PROJETS</a></li>
+      <li><a href="certifications.html" data-i18n="nav_clearance">MA FORMATION</a></li>
+      <li><a href="veille.html" data-i18n="nav_intel">VEILLES</a></li>
+      <li><a href="apropos.html" class="active" data-i18n="nav_profile">À PROPOS</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">FICHE AGENT</h1>
+    
+    <div class="grid-2">
+      
+      <!-- PHOTO / ID -->
+      <div class="hud-panel" style="padding: 20px; display: flex; flex-direction: column; align-items: center;">
+        <div style="width: 200px; height: 200px; border: 2px solid var(--hud-dim); position: relative; overflow: hidden; margin-bottom: 20px;">
+          <img id="profile-img" src="assets/img/profile.jpg" alt="ID PHOTO" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%) contrast(1.2);" onerror="this.src='https://via.placeholder.com/200?text=NO+DATA'">
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent, rgba(0, 240, 255, 0.2)); pointer-events: none;"></div>
+        </div>
+        
+        <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+        <button id="upload-btn" class="btn-tactical" style="font-size: 0.7rem; padding: 5px 15px; margin-bottom: 20px;">[ UPLOAD ID ]</button>
+        
+        <div style="text-align: left; width: 100%;">
+          <p><span class="text-dim">ID:</span> 93-82-AD</p>
+          <p><span class="text-dim">RANK:</span> DEVELOPER (SIO)</p>
+          <p><span class="text-dim">STATUS:</span> ACTIVE / LOOKING FOR INTERNSHIP</p>
+        </div>
+      </div>
+
+      <!-- BIO -->
+      <div class="hud-panel" style="padding: 30px;">
+        <h3 class="highlight">BACKGROUND CHECK</h3>
+        <p class="type-text" style="color: #fff; margin-top: 20px;">
+          Étudiant passionné en informatique, spécialisé dans le développement d'applications web et logicielles. 
+          Mon objectif est de concevoir des solutions robustes, sécurisées et innovantes.
+        </p>
+        <p class="type-text" style="color: #fff; margin-top: 15px;">
+          Actuellement en recherche d'alternance ou de stage pour perfectionner mes compétences sur le terrain.
+        </p>
+
+        <div style="margin-top: 40px; border-top: 1px dashed #333; padding-top: 20px;">
+          <h4 class="highlight">COMMS CHANNELS</h4>
+          <ul style="list-style: none; margin-top: 10px;">
+            <li style="margin-bottom: 5px;">> EMAIL: contact@email.com</li>
+            <li style="margin-bottom: 5px;">> LINKEDIN: linkedin.com/in/user</li>
+            <li style="margin-bottom: 5px;">> GITHUB: github.com/user</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="status-footer">
+    <div>AGENT PROFILE: VERIFIED</div>
+    <div>LAST LOGIN: TODAY</div>
+  </footer>
+  <!-- LANG SELECTOR BOTTOM LEFT -->
+  <div class="hud-bottom-left lang-selector">
+    <button class="lang-btn">[ FR ]</button>
+    <div class="lang-dropdown">
+      <div data-lang="fr">FRANÇAIS</div>
+      <div data-lang="en">ENGLISH</div>
+      <div data-lang="pt">PORTUGUÊS</div>
+      <div data-lang="de">DEUTSCH</div>
+      <div data-lang="it">ITALIANO</div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
